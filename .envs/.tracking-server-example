@@ -1,0 +1,11 @@
+MLFLOW_HOST=0.0.0.0
+MLFLOW_PORT=6100
+
+MYSQL_CONNECTION_NAME=<your-gcp-project-name>:asia-northeast3:<your-gcp-sql-instance-name>
+MYSQL_USER=mlflow
+MYSQL_PASSWORD_SECRET_NAME=<your-secret-manager-secret-name>
+MYSQL_HOST=<your-gcp-sql-instance-ip-address>
+MYSQL_PORT=3306
+MYSQL_DATABASE_NAME=<your-gcp-sql-instance-database-name>
+
+ARTIFACT_STORE=<your-artifact-store-url>

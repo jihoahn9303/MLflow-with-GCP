@@ -1,0 +1,17 @@
+GCP_PROJECT_ID=<your-gcp-project-id>
+PROJECT_NAME=<your-gcp-project-name>
+DOCKER_IMAGE_NAME=${PROJECT_NAME}-mlflow
+GCP_DOCKER_REGISTRY_NAME=<your-wanted-docker-registry-name>
+GCP_DOCKER_REGISTRY_URL=asia-northeast3-docker.pkg.dev/${GCP_PROJECT_ID}/${GCP_DOCKER_REGISTRY_NAME}/${DOCKER_IMAGE_NAME}
+
+IMAGE_NAME=ubuntu-2204-jammy-v20240126
+IMAGE_PROJECT_ID=ubuntu-os-cloud
+
+VM_NAME=<your-wanted-vm-instance-name>
+REGION=asia-northeast3
+ZONE=asia-northeast3-c
+LABELS=env=production,task=mlflow-tracking-server
+MACHINE_TYPE=n2-standard-4
+NETWORK=default
+SUBNET=default
+
